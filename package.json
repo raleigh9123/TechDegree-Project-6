@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-project",
+  "version": "0.0.1",
+  "description": "Portfolio with Node.js, Express, and Pug",
+  "main": "app.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raleigh9123/TechDegree-Project-6.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Pug"
+  ],
+  "author": "Joseph Butterfield",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raleigh9123/TechDegree-Project-6/issues"
+  },
+  "homepage": "https://github.com/raleigh9123/TechDegree-Project-6#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  }
+}
