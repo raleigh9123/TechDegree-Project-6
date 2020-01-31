@@ -11,10 +11,15 @@
             "live_link":"https://raleigh9123.github.io/TechDegree-Project-1/",
             "github_link":"https://github.com/raleigh9123/TechDegree-Project-1",
             "image_urls":[
-                "./public/img/unit-1/landing.png",
-                "./public/img/unit-1/banner1.png",
-                "./public/img/unit-1/banner2.png",
-                "./public/img/unit-1/banner3.png"],
+                {"url":"/static/img/unit-1/landing.png",
+                "landing":true},
+                {"url":"/static/img/unit-1/banner1.png",
+                "landing":false},
+                {"url":"/static/img/unit-1/banner2.png",
+                "landing":false},
+                {"url":"/static/img/unit-1/banner3.png",
+                "landing":false}
+            ]
         },
         {
             "id": 2,
@@ -28,10 +33,15 @@
             "live_link":"https://raleigh9123.github.io/TechDegree-Project-2/",
             "github_link":"https://github.com/raleigh9123/TechDegree-Project-2",
             "image_urls":[
-                "./public/img/unit-2/landing.png",
-                "./public/img/unit-2/banner1.png",
-                "./public/img/unit-2/banner2.png",
-                "./public/img/unit-2/banner3.png"],
+                {"url":"/static/img/unit-2/landing.png",
+                 "landing":true},
+                {"url":"/static/img/unit-2/banner1.png",
+                 "landing":false},
+                {"url":"/static/img/unit-2/banner2.png",
+                 "landing":false},
+                {"url":"/static/img/unit-2/banner3.png",
+                 "landing":false}
+            ]
         },
         {
             "id": 3,
@@ -45,10 +55,15 @@
             "live_link": "https://raleigh9123.github.io/TechDegree-Project-3/",
             "github_link":"https://github.com/raleigh9123/TechDegree-Project-3" ,
             "image_urls":[
-                "./public/img/unit-3/landing.png",
-                "./public/img/unit-3/banner1.png",
-                "./public/img/unit-3/banner2.png",
-                "./public/img/unit-3/banner3.png"],
+                {"url":"/static/img/unit-3/landing.png",
+                "landing":true},
+               {"url":"/static/img/unit-3/banner1.png",
+                "landing":false},
+               {"url":"/static/img/unit-3/banner2.png",
+                "landing":false},
+               {"url":"/static/img/unit-3/banner3.png",
+                "landing":false}
+            ]
         },
         {
             "id": 4,
@@ -60,10 +75,15 @@
             "live_link": "https://raleigh9123.github.io/TechDegree-Project-4/",
             "github_link":"https://github.com/raleigh9123/TechDegree-Project-4",
             "image_urls":[
-                "./public/img/unit-4/landing.png",
-                "./public/img/unit-4/banner1.png",
-                "./public/img/unit-4/banner2.png",
-                "./public/img/unit-4/banner3.png"],
+                {"url":"/static/img/unit-4/landing.png",
+                "landing":true},
+                {"url":"/static/img/unit-4/banner1.png",
+                "landing":false},
+                {"url":"/static/img/unit-4/banner2.png",
+                "landing":false},
+                {"url":"/static/img/unit-4/banner3.png",
+                "landing":false}
+            ]
         },
         {
             "id": 5,
@@ -77,10 +97,15 @@
             "live_link": "https://raleigh9123.github.io/TechDegree-Project-5/",
             "github_link":"https://github.com/raleigh9123/TechDegree-Project-5",
             "image_urls":[
-                "./public/img/unit-5/landing.png",
-                "./public/img/unit-5/banner1.png",
-                "./public/img/unit-5/banner2.png",
-                "./public/img/unit-5/banner3.png"],
+                {"url":"/static/img/unit-5/landing.png",
+                "landing":true},
+                {"url":"/static/img/unit-5/banner1.png",
+                "landing":false},
+                {"url":"/static/img/unit-5/banner2.png",
+                "landing":false},
+                {"url":"/static/img/unit-5/banner3.png",
+                "landing":false}
+            ]
         }
     ]
 }
