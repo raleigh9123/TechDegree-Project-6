@@ -1,8 +1,4 @@
 const express = require('express');
-const path = require('path');
-
-// const bodyParser = require('./body-parser');
-// const cookieParser = require('./cookie-parser');
 
 const app = express();
 app.set('view engine', 'pug');
@@ -15,17 +11,18 @@ app.use(mainRoutes);
 app.use('/projects', projectRoutes);
 
 app.use((req, res, next) => {
-    const err = new Error('Not Found - Status: 404');
+    const err = new Error('Page Not Found');
     err.status = 404;
     next(err);
 });
 
 app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {},
-    });
+    if (!err.status) {
+        err.status = 500;
+        err.message = 'Internal Server Error';
+    }
+    console.log(err);
+    res.render('error', {err});
 });
 
 const port = 3000;

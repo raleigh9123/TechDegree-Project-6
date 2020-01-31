@@ -1,4 +1,4 @@
-extends layout.pug
+extends layout
 
 block content 
   nav.grid-container.portfolio-breadcrumb
@@ -8,8 +8,8 @@ block content
       .cell.small-6.medium-9.large-9
 
         //- Print Error Message
-        h1
+        h1= err.message
+        h6 Status Code: #{err.status}
 
         //- Feel free personalize the title below
-        p.lead.text-light
-          | Full Stack JavaScript Developer.
+        p.portfolio-bio=err.stack
