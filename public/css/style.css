@@ -151,6 +151,9 @@ a:hover{
 ol.skills, ol.skills ul {
   margin:0;
 }
+ol.skills {
+  margin-bottom:1rem;
+}
 .contact, .skills p {
   margin-left:.5rem;
 }
