@@ -58,7 +58,7 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: #333;
   color: #fff;
   box-shadow: none !important;
 }
@@ -71,7 +71,7 @@ a:hover{
   .portfolio-me a{
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    color: #555;
+    color: #999;
     font-size: 13px;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
@@ -79,7 +79,7 @@ a:hover{
   }
 
   .portfolio-me a:hover{
-    color: #999;
+    color: #fff;
   }
 
 .portfolio-breadcrumb{
@@ -114,6 +114,11 @@ a:hover{
 
 .portfolio-index .thumbnail{
   margin-bottom: 5px;
+}
+.thumbnail {
+  border-width:2px;
+  border-radius:5px;
+  box-shadow:-5px 3px 10px 3px rgba(10, 10, 10, 0.2);
 }
 
 .portfolio-index a{

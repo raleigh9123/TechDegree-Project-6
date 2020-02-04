@@ -1,21 +1,31 @@
 # TechDegree-Project-6
- Node.js and Express App
+ Static Node.js and Express Site
+
+ --Description
+This project is a portfolio site built in Node.js and Express using the Pug templating package. Each project's data is listed in a static JSON file and contains the project description, links, and references to the project's images. The site provides links to live demos utilizing github pages, as well as links to the origial Github repository. 
 
 
+--Skills and Process
+Skills: Node.js, Express App, Pug Templating, setting up a server, editing repository on local development server, CLI: Terminal
+-Site generated via express and HTML rendered via Pug
+-Site configured via the following:
+    1. package.json specifies nodemon package to run live preview upon save from terminal via "npm start". app.js opens port 3000 for local preview.
+    2. package.json specifies site via app.js as main.
+    3. app.js: 
+        a. requires express, 
+        b. sets pug as view engine, 
+        c. requires static files (images, css, front-end js)
+        d. requires routes and configures express to use routes.
+        e. catch errors and provide user friendly responses via 'error' view.
+        f. Open port to allow preview on localhost: port
+    4. /routes directory contains index.js for main routes (homepage and about page) and projects.js for each project page. /route files require express and extend router() objects to declare .use() methods for page queries.
+    5. /views directory contains templates to render html files. Data is passed from data.json files in routes files
 
-
-In this project, you'll create a gorgeous portfolio site to showcase the great projects you've built. The site will contain a modern landing page, an about page where you'll have a chance to share contact info, practice your elevator pitch and talk a little about yourself, and a series of project pages to show off and detail at least your first five projects from this Techdegree.
-
-You'll create a JSON file to store all the data about the projects you've created.
-
-You'll use Pug to complete provided templates that utilize the JSON to generate the markup that is ultimately displayed in the browser.
-
-You'll use Node.js and Express to:
-
-Import the required dependencies
-Link the JSON with the Pug templates
-Set up routes to handle requests
-Set up the middleware to utilize static files like CSS
-Handle errors
-Set up a server to serve the project
-After building this project, you should have a comfortable working knowledge of Node.js, Express and Pug, setting up a server, handling requests, working with server-side JavaScript, and building a powerful and modern back end project. And you'll have an important new skill to make you more marketable as a Full Stack JavaScript Developer.
+--Project Attempt
+Exceeds Expectations
+-'npm start' command in terminal runs app via nodemon using app.js as main terminal execution file.
+-Errors are caught in app.js and passed to pug template to render a user-friendly error page. Page extends the layout of the site and includes error information and the corresponding stack trace. (error includes err.message, err.status, and err.stack)
+-CSS modifications:
+1. Box shadows modified on homepage thumbnails.
+2. Sidebar color modified as well as contained text color.
+3. About page includes edited list items. List adds pseudo-classes to delineate categories of front-end and back-end development skills.
